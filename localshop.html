@@ -1,0 +1,338 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+        
+        <link rel="stylesheet" type="text/css" href="inc/style.css?v=5.1.21"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/3fc3d82e66.js" crossorigin="anonymous"></script>
+        <script src="inc/js.js"></script>
+    </head>
+    <body>
+        
+        <div id="mainContainer">
+            <!--Top Nav Bar-->
+            <div id="topContainer">
+                <img src="#" alt="Game Logo">
+                <div id="settings">
+                    <a class="top-header-link" href="#">Settings</a>
+                    <form id="logout" action="logout.php" method="post">
+                        <button type="submit" name="logout-submit">Logout</button>
+                    </form>
+                </div>
+            </div>
+            <!--End Top Nav Bard-->
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Left Sidebar-->
+                <div class="col-lg-2 col-md-2 left_sidebar">
+                        <div id="minimapContainer" class="mx-auto">
+                            <div class="titleHeader">
+                                <div id="mapTitle">Map </div>
+                                <div id="mapGlobe">
+                                    <a href="map.php">
+                                        <button id="worldBtn" type="button">
+                                            <i class="fa fa-globe-americas  "></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <img id="minimap" src="images/Newfoundland_08.jpg">
+                        </div>
+        
+                        <div id="icons" class="white-50 mx-auto">
+                            <div>
+                                <a id="messages">
+                                    <button class="smallIcon" id="left" type="button">
+                                        <i class="fa fa-envelope fa-w-16"></i>
+                                    </button>
+                                </a>
+                            </div>
+                                
+                            <div>
+                                <a id="events">
+                                    <button class="smallIcon" id="right" type="button">
+                                        <i class="fa fa-exclamation-circle fa-w-16"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div id="player-info" class="mx-auto">
+                            <div id="content">
+                                <div id="playerContainer">
+                                    <div class="titleHeader">Information</div>
+                                    <div  id="playerBasic">
+                                        <div>
+                                            <span>Name: </span><a class="playerText" id="playerProfile" href="#">Kurt07 [6]</a>
+                                        </div>
+                                        <div>
+                                            <span>Gold: </span><span class="playerText" id="player_money"></span>
+                                        </div>
+                                        <div>
+                                            <span>Level: </span><span  class="playerText" id=player_level>1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="nav-links">
+                                    <div>
+                                        <a href="index.html" id="home"><button class="navBtns" type="button"><i class="navIcon fa fa-home fa-w-18 fa-fw"></i>Home</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="map.php" id="map"><button class="navBtns" type="button"><i class="navIcon fa fa-globe-americas fa-w-18 fa-fw"></i>World Map</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="items.html" id="items"><button class="navBtns" type="button"><i class="navIcon fa fa-suitcase fa-w-16 fa-fw"></i>Items</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="playerhouse.html" id="properties"><button class="navBtns" type="button"><i class="navIcon fas fa-dungeon fa-w-16 fa-fw"></i>Properties</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="quest.php"><button class="navBtns" type="button"><i class="navIcon fa fa-journal-whills fa-w-16 fa-fw"></i>Quest</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="academy.php"><button class="navBtns" type="button"><i class="navIcon fa fa-journal-whills fa-w-16 fa-fw"></i>Academy</button></a>
+                                    </div>
+                                    <div>
+                                        <a id="clans"><button class="navBtns" type="button"><i class="navIcon fa fa-dragon fa-w-16 fa-fw"></i>Clan</button></a>
+                                    </div>
+                                    <div>
+                                        <a id="highscore"><button class="navBtns" type="button"><i class="navIcon fa fa-trophy fa-w-16 fa-fw"></i>Highscores</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"><button class="navBtns" type="button"><i class="navIcon fab fa-wpforms fa-w-16 fa-fw"></i>Forum</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="guide.php"><button class="navBtns" type="button"><i class="navIcon fas fa-hiking fa-w-16 fa-fw"></i>Guide</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="premium.php"><button class="navBtns" type="button"><i class="navIcon fas fa-hiking fa-w-16 fa-fw"></i>Premium Shop</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="settings.php"><button class="navBtns" type="button"><i class="navIcon fas fa-cog fa-w-16 fa-fw"></i>Settings</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="logout.php"><button class="navBtns" type="button"><i class="navIcon fas fa-lock fa-w-16 fa-fw"></i>Logout</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div><!--End Left Sidebar-->
+                <!--Middle-->
+                <div class="col-lg-8 col-md-8 middle">
+                    <div class="mainContent" id="mainContent">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 leftCityNav">
+                                    <div class="locationNavContainer">
+                                        <div class="townHeaderTitle">
+                                            City Navigation
+                                        </div>
+                                        <div class="mx-auto" id="locationNavLinks">
+                                            <div class="text-align-left">
+                                                <div><a href="localshop.html">Town Market</a></div>
+                                                <div><a>Player Shops</a></div>
+                                                <div><a>Player House</a></div>
+                                                <div><a href="woods.html">Woods (1-10)</a></div>
+                                                <div><a>Forest (10+)</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="townHeaderTitle">
+                                            Players at Location
+                                        </div>
+                                        <div class="locationPlayers" id="atLocation">
+                                            <div class="onlinePlayers">
+
+                                            </div>
+                                        </div>
+                                        <div class="townHeaderTitle">
+                                            Items Dropped
+                                        </div>
+                                        <div class="testWrapper" id="droppedItems">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9">
+                                    <div class="mainTownArea">
+                                        <div class="townHeaderTitle">
+                                            Local Shop
+                                        </div>
+                                        <div class="centerText">
+                                            
+                                            <div id="boughtText"><br /></div>
+                                        </div>
+                                        <div id="localShopView">
+                                            <table id="shopItemBuy" class="table table-sm table-bordered fontColor shopItemTable">
+                                                <thead>
+                                                    <th class="columnWidth">Item</th>
+                                                    <th class="columnWidth">Price</th>
+                                                    <th class="columnWidth">Buy</th>
+                                                </thead>
+                                                <tbody id="localShopTableBody">
+                                                    
+                                                </tbody>
+                                            </table>
+                                            <div id="shopItemSell" class="fontColor">
+                                                <select id="inventoryItems" class="fontColor">
+                                                    
+                                        
+                                                </select>
+                                                <span id="selectedOption"> </span>  <input class="shopInput" id="shopSellItem" type="text" aria-hidden="true">
+                                                <button class="btn-success" type="button" id="shopSellBtn" onclick="sellLocal();" aria-hidden="true">Sell</button>
+                                            </div>
+                                            <div class="centerText">
+                                                <div id="soldText"><br/></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                    </div>
+                </div>
+                <!--End Middle-->
+                <!--Right Sidebar-->
+                <div class="col-lg-2 col-md-2 right_sidebar">
+                    <div id="inventoryContainer" class="mx-auto">
+                        <div class="headerTitle">
+                            Inventory
+                        </div>
+                        <div class="testWrapper" id="inventory">
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div id="equipmentContainer" class="mx-auto">
+                        <div class="titleHeader">
+                            <div id="equipTitle">Equipment</div>
+                        </div>
+
+                        <div class="equipment" id="equipment">
+                            <!--Top-->
+                            <div id="leftHead"></div>
+                            <div id="helmet"></div>
+                            <div id="rightHead"></div>
+                            <!--2nd Row-->
+                            <div id="righthand"></div>
+                            <div id="armor"></div>
+                            <div id="lefthand"></div>
+                            <!--3rd row-->
+                            <div id="shield"></div>
+                            <div id="legs"></div>
+                            <div id="weapon"></div>
+                            <!--bottom-->
+                            <div id="belt"></div>
+                            <div id="feet"></div>
+                            <div id="ring"></div>
+                        </div>
+                    </div>
+
+                    <div id="skillsContainer" class="mx-auto">
+                        <div class="titleHeader">
+                            <div id="skillsTitle">Skills/Stats</div>
+                        </div>
+
+                        <div id="skillsList">
+                            <table id="skillsTable">
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="miningIcon"><img id="toolIcon" title="Mining" src="images/tools.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="miningLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="woodIcon"><img id="toolIcon" title="Woodcutting" src="images/axe.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="woodLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="smithIcon"><img id="toolIcon" title="Smithing" src="images/hammer.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="smithLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="fishIcon"><img id="toolIcon" title="fishing" src="images/map.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="fishLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="cookIcon"><img id="toolIcon" title="Cooking" src="images/gemBlue.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="cookLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="huntIcon"><img id="toolIcon" title="Hunting" src="images/bow.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="huntLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="constructIcon"><img id="toolIcon" title="Constructing" src="images/tome.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="constructLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="tadeIcon"><img id="toolIcon" title="Trading" src="images/scroll.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="tradeLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="farmIcon"><img id="toolIcon" title="Farming" src="images/swordWood.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="farmLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="walkIcon"><img id="toolIcon" title="Walking" src="images/backpack.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="walkLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="theiveIcon"><img id="toolIcon" title="Theiving" src="images/coin.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="theiveLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="magicIcon"><img id="toolIcon" title="Magic" src="images/wand.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="magicLvl">1</span></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--End Right Sidebar-->
+            </div>
+        </div>
+    </body>
+</html>

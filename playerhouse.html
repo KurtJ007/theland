@@ -1,0 +1,486 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+        
+        <link rel="stylesheet" type="text/css" href="inc/style.css?v=5.1.23"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/3fc3d82e66.js" crossorigin="anonymous"></script>
+        <script src="inc/js.js"></script>
+    </head>
+    <body>
+        
+        <div id="mainContainer">
+            <!--Top Nav Bar-->
+            <div id="topContainer">
+                <img src="#" alt="Game Logo">
+                <div id="settings">
+                    <a class="top-header-link" href="#">Settings</a>
+                    <form id="logout" action="logout.php" method="post">
+                        <button type="submit" name="logout-submit">Logout</button>
+                    </form>
+                </div>
+            </div>
+            <!--End Top Nav Bard-->
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Left Sidebar-->
+                <div class="col-lg-2 col-md-2 left_sidebar">
+                        <div id="minimapContainer" class="mx-auto">
+                            <div class="titleHeader">
+                                <div id="mapTitle">Map </div>
+                                <div id="mapGlobe">
+                                    <a href="map.php">
+                                        <button id="worldBtn" type="button">
+                                            <i class="fa fa-globe-americas  "></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <img id="minimap" src="images/Newfoundland_08.jpg">
+                        </div>
+        
+                        <div id="icons" class="white-50 mx-auto">
+                            <div>
+                                <a id="messages">
+                                    <button class="smallIcon" id="left" type="button">
+                                        <i class="fa fa-envelope fa-w-16"></i>
+                                    </button>
+                                </a>
+                            </div>
+                                
+                            <div>
+                                <a id="events">
+                                    <button class="smallIcon" id="right" type="button">
+                                        <i class="fa fa-exclamation-circle fa-w-16"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div id="player-info" class="mx-auto">
+                            <div id="content">
+                                <div id="playerContainer">
+                                    <div class="titleHeader">Information</div>
+                                    <div  id="playerBasic">
+                                        <div>
+                                            <span>Name: </span><a class="playerText" id="playerProfile" href="#">Kurt07 [6]</a>
+                                        </div>
+                                        <div>
+                                            <span>Gold: </span><span class="playerText" id="player_money"></span>
+                                        </div>
+                                        <div>
+                                            <span>Level: </span><span  class="playerText" id=player_level>1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="nav-links">
+                                    <div>
+                                        <a href="index.html" id="home"><button class="navBtns" type="button"><i class="navIcon fa fa-home fa-w-18 fa-fw"></i>Home</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="map.php" id="map"><button class="navBtns" type="button"><i class="navIcon fa fa-globe-americas fa-w-18 fa-fw"></i>World Map</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="items.html" id="items"><button class="navBtns" type="button"><i class="navIcon fa fa-suitcase fa-w-16 fa-fw"></i>Items</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="playerhouse.html" id="properties"><button class="navBtns" type="button"><i class="navIcon fas fa-dungeon fa-w-16 fa-fw"></i>Properties</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="quest.php"><button class="navBtns" type="button"><i class="navIcon fa fa-journal-whills fa-w-16 fa-fw"></i>Quest</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="academy.php"><button class="navBtns" type="button"><i class="navIcon fa fa-journal-whills fa-w-16 fa-fw"></i>Academy</button></a>
+                                    </div>
+                                    <div>
+                                        <a id="clans"><button class="navBtns" type="button"><i class="navIcon fa fa-dragon fa-w-16 fa-fw"></i>Clan</button></a>
+                                    </div>
+                                    <div>
+                                        <a id="highscore"><button class="navBtns" type="button"><i class="navIcon fa fa-trophy fa-w-16 fa-fw"></i>Highscores</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"><button class="navBtns" type="button"><i class="navIcon fab fa-wpforms fa-w-16 fa-fw"></i>Forum</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="guide.php"><button class="navBtns" type="button"><i class="navIcon fas fa-hiking fa-w-16 fa-fw"></i>Guide</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="premium.php"><button class="navBtns" type="button"><i class="navIcon fas fa-hiking fa-w-16 fa-fw"></i>Premium Shop</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="settings.php"><button class="navBtns" type="button"><i class="navIcon fas fa-cog fa-w-16 fa-fw"></i>Settings</button></a>
+                                    </div>
+                                    <div>
+                                        <a href="logout.php"><button class="navBtns" type="button"><i class="navIcon fas fa-lock fa-w-16 fa-fw"></i>Logout</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div><!--End Left Sidebar-->
+                <!--Middle-->
+                <div class="col-lg-8 col-md-8 middle">
+                    <div class="mainContent" id="mainContent">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 leftCityNav">
+                                    <div class="locationNavContainer">
+                                        <div class="townHeaderTitle">
+                                            City Navigation
+                                        </div>
+                                        <div class="mx-auto" id="locationNavLinks">
+                                            <div class="text-align-left">
+                                                <div><a href="localshop.html">Town Market</a></div>
+                                                <div><a>Player Shops</a></div>
+                                                <div><a>Player House</a></div>
+                                                <div><a href="woods.html">Woods (1-10)</a></div>
+                                                <div><a>Forest (10+)</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="townHeaderTitle">
+                                            Players at Location
+                                        </div>
+                                        <div class="locationPlayers" id="atLocation">
+                                            <div class="onlinePlayers">
+
+                                            </div>
+                                        </div>
+                                        <div class="townHeaderTitle">
+                                            Items Dropped
+                                        </div>
+                                        <div class="testWrapper" id="droppedItems">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9">
+                                    <div class="mainTownArea">
+                                        <div class="townHeaderTitle">
+                                            Level 1 House
+                                        </div>
+                                        <div id="outerHouse">
+                                            
+                                            <div id="houseView">
+                                                <div id="houseInfo">
+                                                    <div id="houseImage">
+                                                        House Image
+                                                    </div>
+                                                    <div id="houseOptions" class="category-wrap">
+                                                        <ul class="clearfix list-inline" role="tablist">
+                                                            <li class="parent" role="tab" tabindex="-1" aria-controls="all-items" aria-labeledby="safe" aria-selected="true">
+                                                                <button id="safe" class="testBtn" type="button">Safe</button>
+                                                            </li>
+                                                            <li class="parent" role="tab" tabindex="-1" aria-controls="testy" aria-labeledby="storage" aria-selected="false">
+                                                                <button id="storage" class="testBtn" type="button">Storage</button>
+                                                            </li>
+                                                            <li class="parent"  role="tab" tabindex="-1" aria-controls="testy" aria-labeledby="upgrade" aria-selected="false">
+                                                                <button id="upgrade" class="testBtn" type="button">Upgrade</button>
+                                                            </li>
+                                                            <li class="parent"  role="tab" tabindex="-1" aria-controls="testy" aria-labeledby="upkeep" aria-selected="false">
+                                                                <button id="upkeep" class="testBtn" type="button">Upkeep</button>
+                                                            </li>
+                                                            <li class="parent"  role="tab" tabindex="-1" aria-controls="testy" aria-labeledby="worker" aria-selected="false">
+                                                                <button id="worker" class="testBtn" type="button">Workers</button>
+                                                            </li>
+                                                            <li class="parent"  role="tab" tabindex="-1" aria-controls="testy" aria-labeledby="workshop" aria-selected="false">
+                                                                <button id="workshop" class="testBtn" type="button">Workshops</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="safeOption" class="options" aria-hidden="false">
+                                                        <div id="safeText">
+                                                            <div id="withdraw">
+                                                                Safe gold: 100/1000 gp
+                                                                <p>How much do you want to withdraw:</p>
+                                                            
+                                                                <input class="inputColor" type="text"> <button class="btn-warning"> Withdraw</button>
+                                                            </div>
+                                                            <div id="deposit">
+                                                                You have 200 gp
+                                                                <p>How much do you want to deposit:</p>
+                                                            
+                                                                <input class="inputColor" type="text"> <button class="btn-success"> Deposit</button>
+                                                            </div>
+                                                            <br/>
+                                                        </div>
+                                                    </div>
+                                                    <div id="storageOption" class="options" aria-hidden="true">
+                                                        <div><h4>Storage</h4></div>
+                                                        <div>
+                                                            Space: 100/500
+                                                        </div>
+                                                        <div>
+                                                            <h3>Add Items</h3>
+                                                            <div id="addItems-Container">
+                                                                <select class="inputColor" id="inventoryItemsStorage">
+                                                                    <option value="sword">Sword (1)</option>
+                                                                    <option value="potion">Potion (1)</option>
+                                                                    <option value="shield">Shield (1)</option>
+                                                                    <option value="helmet">Helmet (1)</option>
+                                                                </select>
+                                                                 <input class="inputColor" type="text">
+                                                                 <button class="inputColor" class="btn" type="submit">Add</button>
+                                                            </div>
+                                                        </div>
+                                                        <br/>
+                                                        <div>
+                                                            <h3>Storage Items</h3>
+                                                            <div id="storageContainer">
+                                                                <div id="itemNav" class="storageWrapper">
+                                                                    <button class="testBtn" type="button" title="All" aria-selected="true"><i id="stg-all-items" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" title="Weapons" aria-selected="false"><i id="stg-weapons" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" title="Armor" aria-selected="false"><i id="stg-armor" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" title="Food" aria-selected="false"><i id="stg-food" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" title="Potions" aria-selected="false"><i id="stg-potions" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" title="Materials" aria-selected="false"><i id="stg-materials" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" aria-selected="false"><i id="stg-all-items" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" aria-selected="false"><i id="stg-all-items" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" aria-selected="false"><i id="stg-all-items" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                    <button class="testBtn" type="button" aria-selected="false"><i id="stg-all-items" class="fa fa-folder-open fa-w-18 fa-fw"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <div id="storageList">
+                                                                <ul>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="upgradeOption" class="options" aria-hidden="true">
+                                                        <div><h4>Upgrade House</h4></div>
+                                                        <div>Current Level: <span>1</span></div>
+                                                        <div>Next Upgrade Materials</div>
+                                                        <div>
+                                                            <hr class="divider">
+                                                            <ul class="list-unstyled">
+                                                                <li>Wood: <span>200/500</span></li>
+                                                                <li>Stone: <span>50/500</span></li>
+                                                                <li>Metal: <span>10/100</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div><button class="btn btn-success">Upgrade</button></div>
+                                                        <br/>
+                                                    </div>
+                                                    <div id="upkeepOption" class="options" aria-hidden="true">
+                                                        <div><h4>Upkeep</h4></div>
+                                                        <div>Current fee: <span>1000</span>gp</div>
+                                                        <hr class="divider">
+                                                        <div>Charges</div>
+                                                        <div>Upkeep: <span>500</span>gp/day</div>
+                                                        <div>Workers: <span>500</span>gp/day</div>
+                                                    </div>
+                                                    <div id="workerOption" class="options" aria-hidden="true">
+                                                        <div><h4>Workers</h4></div>
+                                                        <div>Current Workers</div>
+                                                        <hr class="divider">
+                                                        <div>
+                                                            <table class="table table-sm table-bordered fontColor">
+                                                                <thead>
+                                                                    <th>Type</th>
+                                                                    <th>Skill Level</th>
+                                                                    <th>Pay</th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Chef</td>
+                                                                        <td>Cooking - 3</td>
+                                                                        <td>300gp</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Blacksmith</td>
+                                                                        <td>Smithing - 2</td>
+                                                                        <td>200gp</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div>Available Workers</div>
+                                                        <hr class="divider">
+                                                        <div>
+                                                            <table class="table table-sm table-bordered fontColor">
+                                                                <thead>
+                                                                    <th>Type</th>
+                                                                    <th>Skill Level</th>
+                                                                    <th>Pay</th>
+                                                                    <th></th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Chef</td>
+                                                                        <td>Cooking - 1</td>
+                                                                        <td>100gp</td>
+                                                                        <td><button class="btn btn-success">Hire</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Blacksmith</td>
+                                                                        <td>Smithing - 4</td>
+                                                                        <td>400gp</td>
+                                                                        <td><button class="btn btn-success">Hire</button></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div id="workshopOption" class="options" aria-hidden="true">
+                                                        <div><h4>Workshops</h4></div>
+                                                        <div>Coming Soon!</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                    </div>
+                </div>
+                <!--End Middle-->
+                <!--Right Sidebar-->
+                <div class="col-lg-2 col-md-2 right_sidebar">
+                    <div id="inventoryContainer" class="mx-auto">
+                        <div class="headerTitle">
+                            Inventory
+                        </div>
+                        <div class="testWrapper" id="inventory">
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div id="equipmentContainer" class="mx-auto">
+                        <div class="titleHeader">
+                            <div id="equipTitle">Equipment</div>
+                        </div>
+
+                        <div class="equipment" id="equipment">
+                            <!--Top-->
+                            <div id="leftHead"></div>
+                            <div id="helmet"></div>
+                            <div id="rightHead"></div>
+                            <!--2nd Row-->
+                            <div id="righthand"></div>
+                            <div id="armor"></div>
+                            <div id="lefthand"></div>
+                            <!--3rd row-->
+                            <div id="shield"></div>
+                            <div id="legs"></div>
+                            <div id="weapon"></div>
+                            <!--bottom-->
+                            <div id="belt"></div>
+                            <div id="feet"></div>
+                            <div id="ring"></div>
+                        </div>
+                    </div>
+
+                    <div id="skillsContainer" class="mx-auto">
+                        <div class="titleHeader">
+                            <div id="skillsTitle">Skills/Stats</div>
+                        </div>
+
+                        <div id="skillsList">
+                            <table id="skillsTable">
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="miningIcon"><img id="toolIcon" title="Mining" src="images/tools.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="miningLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="woodIcon"><img id="toolIcon" title="Woodcutting" src="images/axe.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="woodLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="smithIcon"><img id="toolIcon" title="Smithing" src="images/hammer.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="smithLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="fishIcon"><img id="toolIcon" title="fishing" src="images/map.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="fishLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="cookIcon"><img id="toolIcon" title="Cooking" src="images/gemBlue.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="cookLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="huntIcon"><img id="toolIcon" title="Hunting" src="images/bow.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="huntLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="constructIcon"><img id="toolIcon" title="Constructing" src="images/tome.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="constructLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="tadeIcon"><img id="toolIcon" title="Trading" src="images/scroll.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="tradeLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="farmIcon"><img id="toolIcon" title="Farming" src="images/swordWood.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="farmLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="walkIcon"><img id="toolIcon" title="Walking" src="images/backpack.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="walkLvl">1</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="skillIcon" id="theiveIcon"><img id="toolIcon" title="Theiving" src="images/coin.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="theiveLvl">1</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillIcon" id="magicIcon"><img id="toolIcon" title="Magic" src="images/wand.png"></div>
+                                    </td>
+                                    <td>
+                                        <div class="skillLvl"><span id="magicLvl">1</span></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--End Right Sidebar-->
+            </div>
+        </div>
+    </body>
+</html>
